@@ -1,0 +1,44 @@
+/* General Styling */
+.responsive-layout {
+    display: flex;
+    flex-direction: column; /* Default stack layout for smaller screens */
+    align-items: center;
+    text-align: center;
+    gap: 20px; /* Adds space between elements */
+    border: 1px solid black;
+    border-radius: 15px;
+  }
+  
+  .text-content {
+    flex: 1;
+    padding: 10px;
+  }
+  
+  .image-content img {
+    width: 95%;
+    margin: 10px;
+    height: auto;
+    max-width: 500px; /* Optional: limit the image size */
+    border-radius: 10px; /* Optional: add styling like rounded corners */
+  }
+  
+  /* For Larger Screens */
+  @media (min-width: 768px) {
+    .responsive-layout {
+      flex-direction: row; /* Side-by-side layout for larger screens */
+      text-align: left;
+      justify-content: space-between; /* Space between text and image */
+      align-items: center;
+    }
+  
+    .text-content {
+      flex: 1;
+      padding-right: 20px; /* Add spacing between text and image */
+    }
+  
+    .image-content {
+      flex: 1;
+      text-align: right;
+    }
+  }
+  
