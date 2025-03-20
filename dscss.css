@@ -242,6 +242,7 @@ header {
     .help .btn{
         display: flex;
     }
+ 
 }
 
 /* Basic Reset */
@@ -274,7 +275,7 @@ body {
     top: 0;
     right: 0;
     width: 50%; /* Background image takes up half the width on larger screens */
-    height: 145%;
+    height: 150%;
     background-image: url('micah\ canva1\ -\ Copy.png'); /* Replace with your image path */
     background-position: right;
     background-repeat: no-repeat;
@@ -326,6 +327,7 @@ body {
         width: 100%; /* Background image takes full width on smaller screens */
         background-position: center;
         border-radius: 7px;
+        text-decoration: none;
     }
 
     .hero-content {
@@ -340,10 +342,15 @@ body {
         font-weight: 700px;
         font-size: 2.5rem;
         padding-top: 40px;
+        display: none;
     }
 
     .hero-content p {
         font-size: 1rem;
+    }
+    .hero-content .btn{
+        top: 170px;
+        position: relative;
     }
 }
 
@@ -463,6 +470,7 @@ body {
     .footer-bottom {
         font-size: 0.8em; /* Smaller font size for the bottom text */
     }
+  
 }
 
 
@@ -549,7 +557,22 @@ body {
     max-width: 500px; /* Optional: limit the image size */
     border-radius: 10px; /* Optional: add styling like rounded corners */
   }
+
+  .old {
+    margin: 20px;
+    display: none;
+  }
   
+@media (max-width: 480px){
+   .old{
+    display: block;
+    justify-items: center;
+   }
+   .old h1{
+    font-size: 2rem;
+   }
+}
+
   /* For Larger Screens */
   @media (min-width: 768px) {
     .responsive-layout {
@@ -568,5 +591,5 @@ body {
       flex: 1;
       text-align: right;
     }
-  }
   
+}
