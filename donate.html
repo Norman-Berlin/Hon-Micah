@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Donate Now</title>
+    <link rel="stylesheet" href="donate.css">
+    <link rel="icon" type="image/x-icon" href="micah canva1 - Copy.png">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <nav class="navbar">
+                <div class="logo">
+                    <h1>Donate Now</h1>
+                </div>
+                <ul class="nav-links" id="nav-links">
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#impact">Impact</a></li>
+                    <li><a href="#donate">Donate</a></li>
+                </ul>
+                <div class="menu-toggle" id="mobile-menu">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </div>
+            </nav>
+            <div class="hero">
+                <h1>Your Donation Makes a Difference</h1>
+                <p>Help us create a better future for everyone. Every contribution counts.</p>
+                <a href="#donate" class="cta-button">Donate Now</a>
+            </div>
+        </div>
+    </header>
+
+    <!-- About Section -->
+    <section id="about" class="about-section">
+        <div class="container">
+            <h2>About Us</h2>
+            <p>We are a non-profit organization dedicated to creating positive change in our community. Your support helps us fund critical programs and initiatives that make a real impact.</p>
+        </div>
+    </section>
+
+    <!-- Impact Section -->
+    <section id="impact" class="impact-section">
+        <div class="container">
+            <h2>Our Impact</h2>
+            <div class="impact-grid">
+                <div class="impact-card">
+                    <i class="fas fa-hand-holding-heart"></i>
+                    <h3>100+ Lives Changed</h3>
+                    <p>Your donations have helped us reach hundreds of people in need.</p>
+                </div>
+                <div class="impact-card">
+                    <i class="fas fa-tree"></i>
+                    <h3>Environmental Projects</h3>
+                    <p>We've planted over 500 trees to combat climate change.</p>
+                </div>
+                <div class="impact-card">
+                    <i class="fas fa-school"></i>
+                    <h3>Education Programs</h3>
+                    <p>We've built schools and provided scholarships to underprivileged children.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Donate Section -->
+    <section id="donate" class="donate-section">
+        <div class="container">
+            <h2>Donate Today</h2>
+            <p>Choose an amount to donate or enter a custom amount:</p>
+            <div class="donate-options">
+                <button class="amount-button">$10</button>
+                <button class="amount-button">$25</button>
+                <button class="amount-button">$50</button>
+                <button class="amount-button">$100</button>
+            </div>
+            <input type="number" class="custom-amount" placeholder="Enter Custom Amount">
+            <button class="cta-button donate-button">Donate Now</button>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2023 Donate Now. All rights reserved. Designed by Norman</p>
+            <div class="social-links">
+                <a href="#"><i class="fab fa-facebook"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Toggle mobile menu
+const mobileMenu = document.getElementById('mobile-menu');
+const navLinks = document.getElementById('nav-links');
+
+mobileMenu.addEventListener('click', () => {
+    navLinks.classList.toggle('active');
+});
+
+// Smooth scrolling for anchor links
+document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+    anchor.addEventListener('click', function (e) {
+        e.preventDefault();
+        document.querySelector(this.getAttribute('href')).scrollIntoView({
+            behavior: 'smooth'
+        });
+    });
+});
+
+// Donate button functionality
+document.querySelectorAll('.amount-button').forEach(button => {
+    button.addEventListener('click', () => {
+        document.querySelector('.custom-amount').value = button.textContent;
+    });
+});
+
+document.querySelector('.donate-button').addEventListener('click', () => {
+    const amount = document.querySelector('.custom-amount').value;
+    if (amount) {
+        alert(`Thank you for donating $${amount}!`);
+    } else {
+        alert('Please enter a donation amount.');
+    }
+});
+    </script>
+</body>
+</html>

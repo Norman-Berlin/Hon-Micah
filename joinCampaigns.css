@@ -1,0 +1,286 @@
+/* General Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: 'Poppins', sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background-color: #f4f4f9;
+  }
+  
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+  }
+  
+  h1, h2, h3 {
+    font-weight: 700;
+  }
+  
+  a {
+    text-decoration: none;
+    color: inherit;
+  }
+  
+  /* Header */
+  .header {
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(photo-1475721027785-f74eccf877e2.avif);
+    background-size: cover;
+    background-position: center;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+  }
+  
+  .navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .nav-links {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+  }
+  
+  .nav-links li a {
+    color: #fff;
+    font-weight: 600;
+  }
+  
+  .menu-toggle {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+  }
+  
+  .menu-toggle .bar {
+    width: 25px;
+    height: 3px;
+    background-color: #fff;
+    margin: 4px 0;
+  }
+  
+  .hero {
+    padding: 100px 0;
+  }
+  
+  .hero h1 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+  }
+  
+  .hero p {
+    font-size: 1.2rem;
+    margin-bottom: 30px;
+  }
+  
+  .cta-button {
+    padding: 10px 20px;
+    background-color: rgb(197, 47, 47);
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .cta-button:hover {
+    background-color: #0056b3;
+  }
+  
+  /* About Section */
+  .about-section {
+    padding: 60px 0;
+    text-align: center;
+    background-color: #fff;
+  }
+  
+  .about-section h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+  }
+  
+  .about-section p {
+    font-size: 1.1rem;
+    max-width: 800px;
+    margin: 0 auto;
+  }
+  
+  /* Campaigns Section */
+  .campaigns-section {
+    padding: 60px 0;
+    background-color: #f4f4f9;
+  }
+  
+  .campaigns-section h2 {
+    text-align: center;
+    font-size: 2.5rem;
+    margin-bottom: 40px;
+  }
+  
+  .campaigns-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+  }
+  
+  .campaign-card {
+    background: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    text-align: center;
+  }
+  
+  .campaign-card h3 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+  }
+  
+  .campaign-card p {
+    font-size: 1rem;
+    color: #666;
+  }
+  
+  /* Events Section */
+  .events-section {
+    padding: 60px 0;
+    background-color: #fff;
+  }
+  
+  .events-section h2 {
+    text-align: center;
+    font-size: 2.5rem;
+    margin-bottom: 40px;
+  }
+  
+  .events-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+  }
+  
+  .event-card {
+    background: #f4f4f9;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+  }
+  
+  .event-card h3 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+  }
+  
+  .event-card p {
+    font-size: 1rem;
+    color: #666;
+    margin-bottom: 10px;
+  }
+  
+  .event-card i {
+    margin-right: 10px;
+  }
+  
+  /* Volunteer Section */
+  .volunteer-section {
+    padding: 60px 0;
+    text-align: center;
+    background-color: rgb(197, 47, 47);
+    color: #fff;
+  }
+  
+  .volunteer-section h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+  }
+  
+  .volunteer-section p {
+    font-size: 1.1rem;
+    margin-bottom: 30px;
+  }
+  
+  .volunteer-form {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    flex-wrap: wrap;
+  }
+  
+  .volunteer-form input {
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    width: 250px;
+  }
+  
+  .volunteer-form button {
+    padding: 10px 20px;
+    background-color: #fff;
+    color: #007bff;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .volunteer-form button:hover {
+    background-color: #f4f4f9;
+  }
+  
+  /* Footer */
+  .footer {
+    padding: 20px 0;
+    text-align: center;
+    background-color: #333;
+    color: #fff;
+  }
+  
+  .social-links {
+    margin-top: 10px;
+  }
+  
+  .social-links a {
+    color: #fff;
+    margin: 0 10px;
+    font-size: 1.2rem;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .nav-links {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        background-color: #333;
+        position: absolute;
+        top: 60px;
+        left: 0;
+    }
+  
+    .nav-links.active {
+        display: flex;
+    }
+  
+    .menu-toggle {
+        display: flex;
+    }
+  
+    .hero h1 {
+        font-size: 2rem;
+    }
+  
+    .hero p {
+        font-size: 1rem;
+    }
+  }
