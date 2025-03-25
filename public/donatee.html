@@ -78,7 +78,7 @@
                 </script>
                 <form  id="paymentForm">
                 <div class="custom-amount">
-                    <input type="number" placeholder="Amount" id="payvalue" value="100"> <br>
+                    <input type="number" placeholder="Amount" id="payvalue" > <br>
                     <div class="premium_error" id="premium_error" style="display: none;"></div>
                 </div>
                 <div class="custom-amount">
@@ -94,46 +94,31 @@
                 <div class="payment-methods">
                     <p>Secure payment processed by Stripe</p>
                     <div class="payment-icons">
-                        <a href="#" >
+                        <a href="#" class="popup-link" onclick="showPopup()">
                             <img src="Visa.jpeg" alt="Visa">
                         </a>
-
-                        <a href="#">
+                        <a href="#"  class="popup-link" onclick="showPopup()"> 
                             <img src="PNG MasterCard Payment Logo Icon.jpeg" alt="Mastercard">
                         </a>
-
-                       <a href="#"> 
-                        <img src="Apple.jpeg" alt="Apple Pay">
-                    </a>
-
-                        <a href="#" >
-                            <img src="download (12).jpeg" alt="Google Pay">
-                        </a>
-        <!-- Popup -->
-        <div id="popup" class="popup">
-            <div class="popup-content">
-                <p>Will be ready soon!</p>
-                <button onclick="closePopup()">OK</button>
-            </div>
+                           <a href="#"  class="popup-link" onclick="showPopup()">
+                            <img src="Apple.jpeg" alt="Apple Pay">
+                        </a> 
+                       <a href="#"  class="popup-link" onclick="showPopup()"> 
+                        <img src="download (12).jpeg" alt="Google Pay">
+                     </a>     
+                            
+                            <!-- Popup -->
+    <div id="popup" class="popup">
+        <div class="popup-content">
+            <p>Will be ready soon!</p>
+            <button onclick="closePopup()">OK</button>
         </div>
-    
-        <script>
-            // Show the popup
-    function showPopup() {
-        const popup = document.getElementById('popup');
-        popup.style.display = 'flex'; // Display the popup as a flexbox
-    }
-    
-    // Close the popup
-    function closePopup() {
-        const popup = document.getElementById('popup');
-        popup.style.display = 'none'; // Hide the popup
-    }
-    
-        </script>
-                    </div>
+    </div>
+
+
                 </div>
             </div>
+        </div>    
             <div class="campaign-info">
                 <h2>Why Your Support Matters</h2>
                 <p>This campaign isn't just about winning an election - it's about building a movement that puts people first. With your help, we can:</p>
