@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Political Updates</title>
+    <link rel="stylesheet" href="updates.css">
+    <link rel="icon" type="image/x-icon" href="micah canva1 - Copy.png">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <nav class="navbar">
+                <div class="logo">
+                    <h1>Political Updates</h1>
+                </div>
+                <ul class="nav-links" id="nav-links">
+                    <li><a href="#news">News</a></li>
+                    <li><a href="#events">Events</a></li>
+                    <li><a href="#updates">Updates</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+                <div class="menu-toggle" id="mobile-menu">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </div>
+            </nav>
+            <div class="hero">
+                <h1>Stay Informed. Stay Engaged.</h1>
+                <p>Get the latest updates from the political arena and join the movement for change.</p>
+                
+            </div>
+        </div>
+    </header>
+
+    <!-- News Section -->
+    <section id="news" class="news-section">
+        <div class="container">
+            <h2>Latest News</h2>
+            <div class="news-grid">
+                <div class="news-card">
+                    <img src="Important Announcement Vector Hd PNG Images, Important Announcement Vector Design, Important Announcement Png, Important Notice, Announcement Design PNG Image For Free Download.jpeg" alt="News Image">
+                    <h3>New Policy Announcement</h3>
+                    <p>Our party has announced a new policy to support local talents, sports, and creative arts to help young people build careers. </p>
+                </div>
+                <div class="news-card">
+                    <img src="Screenshot 2025-03-04 005217.png" alt="News Image">
+                    <h3>Community Outreach Program</h3>
+                    <p>We are launching a new program to engage with communities and address their concerns.</p>
+                   
+                </div>
+                <div class="news-card">
+                    <img src="Kalender op witte achtergrond 3D-rendering _ Premium Foto.jpeg" alt="News Image">
+                    <h3>Election Campaign Kickoff</h3>
+                    <p>Our election campaign has officially begun. Join us in our journey to create a better future.</p>
+                   
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Events Section -->
+    <section id="events" class="events-section">
+        <div class="container">
+            <h2>Upcoming Events</h2>
+            <div class="events-grid">
+                <div class="event-card">
+                    <h3>Policy Discussion Forum</h3>
+                    <p><i class="fas fa-calendar-alt"></i> October 15, 2025</p>
+                    <p><i class="fas fa-map-marker-alt"></i> Kwar Primary School</p>
+                   
+                </div>
+                <div class="event-card">
+                    <h3>Community Rally</h3>
+                    <p><i class="fas fa-calendar-alt"></i> October 20, 2025</p>
+                    <p><i class="fas fa-map-marker-alt"></i>Rinya Primary School</p>
+                   
+                </div>
+                <div class="event-card">
+                    <h3>Volunteer Training</h3>
+                    <p><i class="fas fa-calendar-alt"></i> October 25, 2025</p>
+                    <p><i class="fas fa-map-marker-alt"></i> City Market South Sakwa</p>
+                    
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Updates Section -->
+    <section id="updates" class="updates-section">
+        <div class="container">
+            <h2>Recent Updates</h2>
+            <div class="updates-grid">
+                <div class="update-card">
+                    <h3>New Campaign Strategy</h3>
+                    <p>We have launched a new campaign strategy to reach more voters and address their concerns.</p>
+                    
+                </div>
+                <div class="update-card">
+                    <h3>Policy Success</h3>
+                    <p>Our recent policy initiative has successfully reduced the rate of employment in the society.</p>
+                  
+                </div>
+                <div class="update-card">
+                    <h3>Community Feedback</h3>
+                    <p>We have received positive feedback from communities on our outreach programs.</p>
+                   
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2025 Political Updates. All rights reserved.</p>
+            <div class="social-links">
+                <a href="#"><i class="fab fa-facebook"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+            </div>
+        </div>
+    </footer>
+
+    <script> 
+        // Toggle mobile menu
+const mobileMenu = document.getElementById('mobile-menu');
+const navLinks = document.getElementById('nav-links');
+
+mobileMenu.addEventListener('click', () => {
+    navLinks.classList.toggle('active');
+});
+
+// Smooth scrolling for anchor links
+document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+    anchor.addEventListener('click', function (e) {
+        e.preventDefault();
+        document.querySelector(this.getAttribute('href')).scrollIntoView({
+            behavior: 'smooth'
+        });
+    });
+});
+    </script>
+</body>
+</html>

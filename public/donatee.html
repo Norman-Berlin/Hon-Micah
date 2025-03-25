@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="icon" type="image/x-icon" href="micah canva1 - Copy.png">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Support Hon. Micah Omondi</title>
+    <link rel="stylesheet" href="donatee.css">
+    <style>
+       
+    </style>
+</head>
+<body>
+    <main>
+    <header>
+        <div class="header-bg"></div>
+        <div class="header-content">
+            <h1>Together, We Can Make History</h1>
+            <p class="tagline">Join Hon. Micah Omondi's movement for real change in South Sakwa Ward</p>
+            
+            <div class="progress-container">
+                <div class="progress-bar">15%</div>
+            </div>
+            <div class="progress-text">
+                <strong>Ksh. 45,000 raised</strong> of our Ksh. 10M goal - <strong> Every dollar brings us closer to victory!</strong>
+        </div>
+    </header>
+    
+    <div class="container">
+        <div class="donation-section">
+            <div class="donation-options">
+                <h2>Fuel Our Movement</h2>
+                <p>Your contribution today will help us reach more voters, organize community events, and spread our message of hope and progress.</p>
+                
+                
+                <div class="donation-amounts">
+                    <button class="donation-btn  highlight" onclick="payValue1()">Ksh. 100</button>
+                    <button class="donation-btn"  onclick="payValue()">Ksh. 500</button>
+                    <button class="donation-btn"  onclick="payValue2()">Ksh. 1,000</button>
+                    <button class="donation-btn"  onclick="payValue3()">Ksh. 2,500</button>
+                    <button class="donation-btn"  onclick="payValue4()">Ksh. 5,000</button>
+                    <button class="donation-btn"  onclick="payValue5()">ksh. 10,000</button>
+                </div>
+                
+                <!-- <div class="custom-amount">
+                    <input type="number" placeholder="Other amount" id="payvalue" value="1,000"> 
+                </div> -->
+                <script>
+                    function payValue(){
+                        
+                        document.getElementById("payvalue").value = 500;
+                    }
+
+                    function payValue1(){
+                        
+                        document.getElementById("payvalue").value = 100;
+                    }
+
+                    function payValue2(){
+                        
+                        document.getElementById("payvalue").value = 1000;
+                    }
+
+                    function payValue3(){
+                        
+                        document.getElementById("payvalue").value = 2500;
+                    }
+
+                    function payValue4(){
+                        
+                        document.getElementById("payvalue").value = 5000;
+                    }
+
+                    function payValue5(){
+                        
+                        document.getElementById("payvalue").value = 10000;
+                    }
+                </script>
+                <form  id="paymentForm">
+                <div class="custom-amount">
+                    <input type="number" placeholder="Amount" id="payvalue" value="100"> <br>
+                    <div class="premium_error" id="premium_error" style="display: none;"></div>
+                </div>
+                <div class="custom-amount">
+                   
+                    <input type="number" placeholder="Number e.g 0712345678" id="paynumber"> <br>
+                    <div class="number_error" id="number_error" style="display: none;"></div>
+                </div>
+                <div class="custom-amount">
+                    <button class="cta-btn" type="submit">Give Now</button>
+                </div>
+            </form>
+                
+                <div class="payment-methods">
+                    <p>Secure payment processed by Stripe</p>
+                    <div class="payment-icons">
+                        <a href="#" >
+                            <img src="Visa.jpeg" alt="Visa">
+                        </a>
+
+                        <a href="#">
+                            <img src="PNG MasterCard Payment Logo Icon.jpeg" alt="Mastercard">
+                        </a>
+
+                       <a href="#"> 
+                        <img src="Apple.jpeg" alt="Apple Pay">
+                    </a>
+
+                        <a href="#" >
+                            <img src="download (12).jpeg" alt="Google Pay">
+                        </a>
+        <!-- Popup -->
+        <div id="popup" class="popup">
+            <div class="popup-content">
+                <p>Will be ready soon!</p>
+                <button onclick="closePopup()">OK</button>
+            </div>
+        </div>
+    
+        <script>
+            // Show the popup
+    function showPopup() {
+        const popup = document.getElementById('popup');
+        popup.style.display = 'flex'; // Display the popup as a flexbox
+    }
+    
+    // Close the popup
+    function closePopup() {
+        const popup = document.getElementById('popup');
+        popup.style.display = 'none'; // Hide the popup
+    }
+    
+        </script>
+                    </div>
+                </div>
+            </div>
+            <div class="campaign-info">
+                <h2>Why Your Support Matters</h2>
+                <p>This campaign isn't just about winning an election - it's about building a movement that puts people first. With your help, we can:</p>
+                
+                <ul style="margin: 1.5rem 0; padding-left: .5rem;">
+                    <li style="margin-bottom: 0.8rem;">Launch a grassroots outreach program to connect with every voter in our villages</li>
+                    <li style="margin-bottom: 0.8rem;">Run TV and digital ads to counter our opponent's misinformation</li>
+                    <li style="margin-bottom: 0.8rem;">Organize town halls and community events to hear directly from ward members</li>
+                    <li style="margin-bottom: 0.8rem;">Build a volunteer network that will turn out voters on Election Day</li>
+                </ul>
+                
+                <p><strong>Time is running out.</strong> The final reporting deadline before the election is just days away, and we need to show strong fundraising numbers to demonstrate our campaign's momentum to voters and the media.</p>
+                
+                <div class="testimonials">
+                    <h2>What People Are Saying</h2>
+                    <div class="testimonial-grid">
+                        <div class="testimonial">
+                            <p class="testimonial-text">"I've never been so inspired by a candidate in my life. Hon. Micah Omondi represents the change we desperately need, and that's why I'm proud to support this campaign."</p>
+                            <p class="testimonial-author">- Perez Mipata. </p>
+                        </div>
+                        <div class="testimonial">
+                            <p class="testimonial-text">"After years of feeling unheard, Hon. Micah Omondi gives me hope that our community's voice will finally be represented."</p>
+                            <p class="testimonial-author">- Clinton Odhiambo</p>
+                        </div>
+                        <div class="testimonial">
+                            <p class="testimonial-text">"This is the most organized, principled campaign I've ever volunteered for. Every dollar donated is put to good use."</p>
+                            <p class="testimonial-author">- Rolix Fer Rolly</p>
+                        </div>
+                        <div class="testimonial">
+                            <p class="testimonial-text">"My joy to join the most organized and event driven campaign. I am more than optimistic that every donation we make will contribute to a marvelous change once Hon. Micah Omondi resumes the seat."</p>
+                            <p class="testimonial-author">- Stacy Achieng</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="impact-stats">
+            <div class="stat">
+                <div class="stat-number">870+</div>
+                <div class="stat-label">Volunteers Mobilized</div>
+            </div>
+            <div class="stat">
+                <div class="stat-number">12</div>
+                <div class="stat-label">Community Events Held</div>
+            </div>
+            <div class="stat">
+                <div class="stat-number">28%</div>
+                <div class="stat-label">Small Donations </div>
+            </div>
+            <div class="stat">
+                <div class="stat-number">24/7</div>
+                <div class="stat-label">Grassroots Support</div>
+            </div>
+        </div>
+        
+        <div class="cta-section">
+            <h2 class="cta-title">This Is Our Moment</h2>
+            <p style="max-width: 700px; margin: 0 auto 2rem;">The special interests backing our opponent have deep pockets, but we have something more powerful: people like you who believe in a better future. Donate today and be part of this historic campaign.</p>
+            <button class="cta-btn">Contribute Now</button>
+        </div>
+    </div>
+    
+    <footer>
+      
+        <div class="social-links">
+            <a href="#"><i class="fab fa-facebook"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fab fa-youtube"></i></a>
+        </div>
+        <p>© 2025 Hon. Micah Omondi Otieno | All rights reserved.</p>
+    </footer>
+    
+    <!-- Font Awesome for icons -->
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+
+    <script src="payment.js"></script>
+</main>
+</body>
+</html>

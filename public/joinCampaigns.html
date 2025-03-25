@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Join Our Campaign | Political Party</title>
+    <link rel="stylesheet" href="joinCampaigns.css">
+    <link rel="icon" type="image/x-icon" href="micah canva1 - Copy.png">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <nav class="navbar">
+                <div class="logo">
+                    <h1>Hon. Micah</h1>
+                </div>
+                <ul class="nav-links">
+                    <li><a href="#about">About Us</a></li>
+                    <li><a href="#campaigns">Campaigns</a></li>
+                    <li><a href="#events">Events</a></li>
+                    <li><a href="#volunteer">Volunteer</a></li>
+                </ul>
+                <div class="menu-toggle" id="mobile-menu">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </div>
+            </nav>
+            <div class="hero">
+                <h1>Together, We Can Make a Difference at South Sakwa Ward</h1>
+                <p>Join our campaign to create a better future for everyone.</p>
+            </div>
+        </div>
+    </header>
+
+    <!-- About Section -->
+    <section id="about" class="about-section">
+        <div class="container">
+            <h2>About </h2>
+            <p>Hon. Micah Omondi is dedicated to creating a fair, just, and sustainable society. His mission is to empower communities, protect the environment, and ensure equal opportunities for all.</p>
+            <p>The power to transform our ward is in your hands. In 2027, let us vote for Hon. Micah Omondi , a leader with vision, action, and integrity. Together, we can make South Sakwa a place of opportunity, prosperity, and dignity for all!</p>
+        </div>
+    </section>
+
+    <!-- Campaigns Section -->
+    <section id="campaigns" class="campaigns-section">
+        <div class="container">
+            <h2>Our Campaigns</h2>
+            <div class="campaigns-grid">
+                <div class="campaign-card">
+                    <h3>Economic Equality</h3>
+                    <p>Fighting for fair wages and reducing income inequality.</p>
+                </div>
+                <div class="campaign-card">
+                    <h3>Results-Oriented Governance</h3>
+                    <p> Not just words, but action and progress.</p>
+                </div>
+                <div class="campaign-card">
+                    <h3>Healthcare for All</h3>
+                    <p>Ensuring universal access to quality healthcare.</p>
+                </div>
+                <div class="campaign-card">
+                    <h3>Education Reform</h3>
+                    <p>Investing in education for equal opportunities.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Events Section -->
+    <section id="events" class="events-section">
+        <div class="container">
+            <h2>Upcoming Events</h2>
+            <div class="events-grid">
+                <div class="event-card">
+                    <h3>Community Rally</h3>
+                    <p><i class="fas fa-calendar-alt"></i> June 15, 2025</p>
+                    <p><i class="fas fa-map-marker-alt"></i> Kwar Primary School</p>
+                </div>
+                <div class="event-card">
+                    <h3>Policy Discussion</h3>
+                    <p><i class="fas fa-calendar-alt"></i> August 20, 2025</p>
+                    <p><i class="fas fa-map-marker-alt"></i> Rinya Primary School</p>
+                </div>
+                <div class="event-card">
+                    <h3>Volunteer Training</h3>
+                    <p><i class="fas fa-calendar-alt"></i> October 25, 2025</p>
+                    <p><i class="fas fa-map-marker-alt"></i> City Market South Sakwa</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Volunteer Section -->
+    <section id="volunteer" class="volunteer-section">
+        <div class="container">
+            <h2>Join the Movement</h2>
+            <p>Your support is crucial to our success. Sign up to volunteer and make a difference.</p>
+            <form class="volunteer-form">
+                <input type="text" placeholder="Your Name" required>
+                <input type="email" placeholder="Your Email" required>
+                <input type="tel" placeholder="Your Phone Number" required>
+                <button type="submit" class="cta-button">Sign Up</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2025 Hon. Micah. All rights reserved. Designed by Norman</p>
+            <div class="social-links">
+                <a href="https://www.facebook.com/profile.php?id=61573759766336"><i class="fab fa-facebook"></i></a>
+                <a href="https://x.com/south_sakwa?t=nehlU2pPFbkzfx97x7BSsg&s=09"><i class="fab fa-twitter"></i></a>
+                <a href="https://www.instagram.com/hon_micah_omondi_mca2027/?__pwa=1"><i class="fab fa-instagram"></i></a>
+            </div>
+        </div>
+    </footer>
+
+    <script>// Toggle mobile menu
+        const mobileMenu = document.getElementById('mobile-menu');
+        const navLinks = document.querySelector('.nav-links');
+        
+        mobileMenu.addEventListener('click', () => {
+            navLinks.classList.toggle('active');
+        });
+        
+        // Smooth scrolling for anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+    </script>
+</body>
+</html>

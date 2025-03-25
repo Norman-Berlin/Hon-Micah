@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Join Our Political Community</title>
+    <link rel="stylesheet" href="joinCommunity.css">
+    <link rel="icon" type="image/x-icon" href="micah canva1 - Copy.png">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <nav class="navbar">
+                <div class="logo">
+                    <h1>Political Community</h1>
+                </div>
+                <ul class="nav-links" id="nav-links">
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#benefits">Benefits</a></li>
+                    <li><a href="#testimonials">Testimonials</a></li>
+                    <li><a href="#join">Join Us</a></li>
+                </ul>
+                <div class="menu-toggle" id="mobile-menu">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </div>
+            </nav>
+            <div class="hero">
+                <h1>Join Our Political Community</h1>
+                <p>Be part of a movement that drives real change. Together, we can build a better future.</p>
+            </div>
+        </div>
+    </header>
+
+    <!-- About Section -->
+    <section id="about" class="about-section">
+        <div class="container">
+            <h2>Let’s Build a Better South Sakwa Together!</h2>
+            <p>The power to transform our ward is in your hands. In 2027, let us vote for Hon. Micah Omondi , a leader with vision, action, and integrity. Together, we can make South Sakwa a place of opportunity, prosperity, and dignity for all!</p>
+        </div>
+    </section>
+
+    <!-- Benefits Section -->
+    <section id="benefits" class="benefits-section">
+        <div class="container">
+            <h2>Why Join Us?</h2>
+            <div class="benefits-grid">
+                <div class="benefit-card">
+                    <i class="fas fa-users"></i>
+                    <h3>People-Centered Leadership</h3>
+                    <p> Your concerns, your voice, and your needs come first!</p>
+                </div>
+                <div class="benefit-card">
+                    <i class="fas fa-handshake"></i>
+                    <h3>Accountability & Transparency</h3>
+                    <p>No corruption, no mismanagement! Every coin will be accounted for.</p>
+                </div>
+                <div class="benefit-card">
+                    <i class="fas fa-chart-line"></i>
+                    <h3> Inclusivity & Equal Development </h3>
+                    <p>No area will be left behind; every village will see growth.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section id="testimonials" class="testimonials-section">
+        <div class="container">
+            <h2>What Our Members Say</h2>
+            <div class="testimonials-grid">
+                <div class="testimonial-card">
+                    <p>"Joining this community has been one of the best decisions I've made. I feel empowered to make a difference."</p>
+                    <h4>Norman Berlin</h4>
+                </div>
+                <div class="testimonial-card">
+                    <p>"The support and camaraderie here are unmatched. I've grown so much as a leader."</p>
+                    <h4>Peter Orwa</h4>
+                </div>
+                <div class="testimonial-card">
+                    <p>"Being part of this community has given me a sense of purpose and direction."</p>
+                    <h4>Stacy Achieng</h4>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Join Section -->
+    <section id="join" class="join-section">
+        <div class="container">
+            <h2>Join Us Today</h2>
+            <p>Ready to make a difference? Sign up now to join our political community.</p>
+            <form class="join-form">
+                <input type="text" placeholder="Your Name" required>
+                <input type="email" placeholder="Your Email" required>
+                <input type="tel" placeholder="Your Phone Number" required>
+                <button type="submit" class="cta-button">Sign Up</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2025 Political Community. All rights reserved. Designed by Norman</p>
+            <div class="social-links">
+                <a href="https://www.facebook.com/profile.php?id=61573759766336"><i class="fab fa-facebook"></i></a>
+                <a href="https://x.com/south_sakwa?t=nehlU2pPFbkzfx97x7BSsg&s=09"><i class="fab fa-twitter"></i></a>
+                <a href="https://www.instagram.com/hon_micah_omondi_mca2027/?__pwa=1"><i class="fab fa-instagram"></i></a>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Toggle mobile menu
+const mobileMenu = document.getElementById('mobile-menu');
+const navLinks = document.getElementById('nav-links');
+
+mobileMenu.addEventListener('click', () => {
+    navLinks.classList.toggle('active');
+});
+
+// Smooth scrolling for anchor links
+document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+    anchor.addEventListener('click', function (e) {
+        e.preventDefault();
+        document.querySelector(this.getAttribute('href')).scrollIntoView({
+            behavior: 'smooth'
+        });
+    });
+});
+    </script>
+</body>
+</html>
