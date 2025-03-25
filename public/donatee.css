@@ -382,30 +382,30 @@ body {
     padding: 0;
     text-align: center;
     background-color: #f9f9f9;
-  }
-  
-  /* Payment Icons Container */
-  .payment-icons {
+}
+
+/* Payment Icons Container */
+.payment-icons {
     margin: 20px auto;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     gap: 20px;
-  }
-  
-  .payment-icons img {
+}
+
+.payment-icons img {
     width: 40px;
     height: auto;
     cursor: pointer;
     transition: transform 0.2s ease;
-  }
-  
-  .payment-icons img:hover {
+}
+
+.payment-icons img:hover {
     transform: scale(1.1); /* Slight zoom effect on hover */
-  }
-  
-  /* Popup Container */
-  .popup {
+}
+
+/* Popup Container */
+.popup {
     display: none; /* Hidden by default */
     position: fixed;
     top: 0;
@@ -416,10 +416,10 @@ body {
     justify-content: center;
     align-items: center;
     z-index: 1000;
-  }
-  
-  /* Popup Content */
-  .popup-content {
+}
+
+/* Popup Content */
+.popup-content {
     background-color: white;
     padding: 20px;
     border-radius: 10px;
@@ -427,15 +427,15 @@ body {
     text-align: center;
     width: 90%;
     max-width: 400px; /* Responsive max width */
-  }
-  
-  .popup-content p {
+}
+
+.popup-content p {
     font-size: 18px;
     color: #333;
     margin-bottom: 20px;
-  }
-  
-  .popup-content button {
+}
+
+.popup-content button {
     background-color: #0078D7;
     color: white;
     border: none;
@@ -444,9 +444,8 @@ body {
     cursor: pointer;
     font-size: 16px;
     transition: background-color 0.3s ease;
-  }
-  
-  .popup-content button:hover {
+}
+
+.popup-content button:hover {
     background-color: #005A9E;
-  }
-  
+}
