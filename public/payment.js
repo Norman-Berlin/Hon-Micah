@@ -83,3 +83,16 @@
             }
             // hideLoadingSpinner();
           });
+
+
+          // Show the popup
+function showPopup() {
+  const popup = document.getElementById('popup');
+  popup.style.display = 'flex'; // Display the popup as a flexbox
+}
+
+// Close the popup
+function closePopup() {
+  const popup = document.getElementById('popup');
+  popup.style.display = 'none'; // Hide the popup
+}
