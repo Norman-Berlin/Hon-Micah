@@ -448,6 +448,9 @@ body {
     .footer-section.social .social-icons {
         justify-content: center;
     }
+    .footer-section.about ul {
+        display: none;
+    }
 }
 
 @media (max-width: 480px) {
@@ -457,6 +460,7 @@ body {
 
     .footer-section.about p {
         font-size: 0.8em; /* Smaller text for very small screens */
+        display: none;
     }
 
     .footer-section.links ul li a {
